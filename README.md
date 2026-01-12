@@ -1,83 +1,82 @@
 ### ASP.NET + React Full-Stack Pet Project
-## Проект блога с реальным временным чатом, авторизацией и CRUD операциями.
+## Blog project with real time chat, authorization and CRUD operations.
 
-## 🚀 Демо
+## 🚀 Demo
 Frontend: http://localhost:3000
 
 Backend API: http://localhost:5000
 
 SignalR Hub: ws://localhost:5000/chatHub
 
-## 📋 Функциональность
-🔐 Аутентификация & Авторизация
-JWT токены для безопасного доступа
+## 📋 Functionality
+🔐 Authentication & Authorization
+JWT tokens for secure access
 
-Регистрация/Вход пользователей
+User Registration/Login
 
-Автоматическое обновление токенов
+Automatic token refresh
 
-Ролевая модель (User/Admin)
+Role model (User/Admin)
 
-## 💬 Real-time Чат
-Мгновенные сообщения через SignalR
+## 💬 Real-time Chat
+Instant messaging via SignalR
 
-Список онлайн пользователей
+List of online users
 
-История сообщений
+Message history
 
-Уведомления о подключении/отключении
+Connection/disconnection notifications
 
-## 📝 Управление контентом
-Создание, редактирование, удаление статей
+## 📝 Content Management
+Creating, editing, and deleting articles
 
-Комментирование статей
+Commenting on articles
 
-Теги и категории
+Tags and categories
 
-Статистика просмотров
+View statistics
 
-## 🛠 Технологический стек
+## 🛠 Tech stack
 Backend (ASP.NET Core)
 ASP.NET Core Web API - RESTful API
 
-Entity Framework Core - ORM для работы с БД
+Entity Framework Core - ORM for working with databases
 
-SignalR - Real-time коммуникация
+SignalR - Real-time communication
 
-JWT Bearer Authentication - Аутентификация
+JWT Bearer Authentication - Authentication
 
-Identity Framework - Управление пользователями
+Identity Framework - User Management
 
-SQL Server / SQLite - База данных
+SQL Server / SQLite - Database
 
-AutoMapper - Маппинг DTO
-
+AutoMapper - DTO Mapping
 
 Frontend (React 18 + TypeScript)
-React 18 - Библиотека UI
+React 18 - UI Library
 
-# Cтруктура:
+# Structure:
 ```markdown
-  <tag>
-     MyAspServer/                    (на GitHub: ~3 MB)
-├── Backend/                   // MyAspServer 
-│   ├── MyAspServer/
-│   │   ├── Controllers/       
-│   │   ├── Models/            
-│   │   └── Program.cs
-│   └── MyAspServer.csproj
-└── Frontend/                   
-    └── blog-test-frontend/
-        ├── package.json       
-        ├── package-lock.json  
-        └── src/               
+<tag>
+MyAspServer/ (on GitHub: ~3 MB)
+├── Backend/ // MyAspServer
+│ ├── MyAspServer/
+│ │ ├── Controllers/
+│ │ ├── Models/
+│ │ └── Program.cs
+│ └── MyAspServer.csproj
+└── Frontend/ 
+└── blog-test-frontend/ 
+├── package.json 
+├── package-lock.json 
+└── src/ 
 
-   <tag>
+<tag>
 ```
-## Используемые пакеты 
-Microsoft.AspN 2.2.4 
-Microsoft.AspNetCore.Authentication.JwtBearer 8.0.0 
-Microsoft.AspNetCore.Identity.EntityFrameworkCore 8.0.0 
+## Packages used
+Microsoft.AspN 2.2.4
+Microsoft.AspNetCore.Authentication.JwtBearer 8.0.0
+Microsoft.AspNetCore.Identity.EntityFrameworkCore 8.0.0
 Microsoft.AspNetCore.Mvc.Core 2.3.0
 Microsoft.AspNetCore.SignalR.Core 1.2.0
 Microsoft.EntityFrameworkCore 9.0.0
@@ -86,15 +85,22 @@ Microsoft.Extensions.Identity.Core 10.0.1
 Microsoft.IdentityModel.Tokens 8.15.0
 System.IdentityModel.Tokens.Jwt 8.15.0
 
-# Start !
- Собоери бекенд : MyAspServer.sln
- Собери фронтенд: установи node.js
- Запусти фронтенд: npm start
- Запусти бекенд
+#Start! 
+Build the backend: MyAspServer.sln
+Build the frontend: install node.js
+Run the frontend: npm start
+Run the backend
 
- Проверь соединение http://localhost:5000 получите ошибку 404 в f 12 -значит соединение установлено
- вернитесь http://localhost:3000 и пользуйтесь !
+## Scr
+<img width="1840" height="900" alt="image" src="https://github.com/user-attachments/assets/34cf288c-c4f0-4d1b-b988-680098ce8b60" />
+<img width="1850" height="922" alt="image" src="https://github.com/user-attachments/assets/6c12c355-984a-4c2e-a260-ba7e5b897d91" />
+<img width="1822" height="930" alt="image" src="https://github.com/user-attachments/assets/4eaf190e-3dab-463e-a418-c7a0786f48dd" />
+<img width="1844" height="918" alt="image" src="https://github.com/user-attachments/assets/5dde290c-eb79-4877-960d-b3e61c64fa73" />
 
- Рекомендую настроить appsettings.json для личного шифрования.
 
- P.S. если что то не работает, во всем виноват React, он нужен мне был только для тестирования.
+Check the connection at http://localhost:5000 ; you'll get a 404 error in f12 - that means the connection is established.
+Go back to http://localhost:3000 and use it!
+
+I recommend setting up appsettings.json for private encryption.
+
+P.S. If something doesn't work, it's React's fault; I only needed it for testing.
